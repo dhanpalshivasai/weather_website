@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="icon" type="image/x-icon" href="favicon4.ico">
+    <link rel="stylesheet" href="s.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Exo:ital@1&display=swap" rel="stylesheet">
+    <!--Date and time-->
+    <script type="text/javascript">
+        function timeCount() {
+        var today = new Date();
+
+        var day = today.getDate();
+        var month = today.getMonth()+1;
+        var year = today.getFullYear();
+
+        var hour = today.getHours();
+        if(hour<10)hour = "0"+hour;
+
+        var minute = today.getMinutes();
+        if(minute<10)minute = "0"+minute;
+
+        var second = today.getSeconds();
+        if(second<10)second = "0"+second;
+
+        document.getElementById("clock").innerHTML = 
+        month+"/"+day+"/"+year+" |"+hour+":"+minute+":"+second;
+
+        setTimeout("timeCount()", 1000);
+    }
+    </script>
+</head>
+
+<body onLoad="timeCount()">
+    <div class="header">
+        <div class="row">
+            <div class="col1"><img src="" alt="" srcset="" id="weather-icon"></div>
+            <div class="col2"><div class="desc">__</div></div>
+            <div id="location">Finding your location</div>
+            <div class='t1' id="clock"> </div>  
+        </div> 
+        <div class="mark ">
+        </div>
+     </div>
+    <div class='animation1'>
+        <div class="a1"><img src="cloud6.png" alt="cloud" style="height: 260px;width: 600px;opacity: 0.65;"></div>
+        <div class="a2"><img src="cloud2.png" alt="cloud" style="height: 100px;width: 250px;"></div>
+    </div>
+    <div class="data1">
+            <div class="d1"><div class="info">
+                <h4>Sunrise: <span class="sunrise">No Information Available</span></h4>
+            </div></div>
+            <div class="d2">
+                <div class="info">
+                    <h4>Sunset: <span class="sunset">No Information Available</span></h4>
+                </div>
+            </div>
+    </div>
+    <div class="data2">
+        <div class="c1">
+            <div class="d3"><div><p>Temperature in Celsius : </p></div><div class="c">Loading</div></div>
+            <div class="d4"><div> <p>Wind : </p></div><div class="speed">  </div><p> Km/h</p></div>
+        </div>
+        <div class="c2">
+            <div class="d5"><div><p>Temperature in Fahrenheit : </p></div><div class="f">Loading</div></div>
+            <div class="d6"><div> <p>Humidity : </p> </div><div class="humidity"></div></div>
+        </div>
+    </div>
+    <div class="extra">
+        <div class="extra1"><a href="w1.html"><button class="button" style="vertical-align:middle"><span>Select city </span></button></a></div>
+        <div class="extra2"><a href="w2.html"><button class="button2" style="vertical-align:middle"><span>5 day forecast</span></button></a></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

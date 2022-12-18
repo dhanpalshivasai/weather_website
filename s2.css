@@ -1,0 +1,143 @@
+*{
+  background-image: url('https://images5.alphacoders.com/112/thumb-1920-1123013.jpg');
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inputContainer, #cityName, button{
+  margin: 3px;
+padding:5px;
+text-align:center;
+font-size:20px;
+font-weight:bold;
+color: aqua;
+}
+#cityInput{
+  color: rgb(213, 245, 235);
+  margin: 3px;
+  padding:5px;
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+}
+
+#weatherContainer{
+  position: absolute;
+  background-image: url('https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');
+  top: 70%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 1300px;
+  border: 5px solid white;    
+  border-radius: 10px;
+  color: rgb(224, 186, 136);
+}
+
+#iconsContainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  height: 240px;
+  width: 1200px;    
+  border: 5px solid rgb(255, 255, 255);    
+  border-radius: 10px;
+}
+
+.icons{
+  display: inline-bock;
+  float: left;
+  height: 200px;
+  width: 190px;
+  margin: 20px;
+  border: 5px solid rgb(244, 210, 210);
+  border-radius: 10px;
+}
+
+.image{
+  height: 140px;
+  width: 100%;
+}
+
+.imgClass{
+  height: 140px;
+  width: 100%;
+}
+
+.weather{
+  margin: 5px;
+ /*  background-color: rgb(106, 215, 255); */
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.minValues{
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  height: 25px;
+  width: 85px;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: aqua;
+}
+
+
+.maxValues{
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  height: 25px;
+  width: 85px;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: aqua;
+}
+#para1{
+  color: antiquewhite;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #89e7fe;
+  border: none;
+  color:black;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+  .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+
+  .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+
+  .button:hover span {
+  padding-right: 25px;
+  }
+
+  .button:hover span:after {
+  opacity: 1;
+  right: 0;
+  }

@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('398961.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .weather {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 1.5rem;
+  }
+  .circle {
+    background-color: black;
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    margin: 0 15px;
+  }
+  .s1{
+    padding: auto;
+    
+  }
+  .header{
+
+  }
+ .mark{
+    height: 50px;
+    width: 300px;
+    margin-left: 720px;
+ } 
+ .row{
+    height: 100px;
+    width: 100%;
+    display: flex;
+  
+ }
+ .col1{
+    height: 10px;
+    width: 10%;
+    margin-right: 3px;
+    margin-left: 50px;
+}
+ 
+ .col2{
+    font-size:25px;
+    font-family: 'Exo', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 130px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 20px;
+    height: 50px;
+    width: 250px;
+ }
+ #location {
+    font-size:  45px;
+    font-family: 'Exo', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 10px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 20px;
+    height: 70px;
+    width: 350px;
+  }
+.desc{
+    text-align: center;
+    margin-top: 8px;
+}
+ .t1{
+    font-size:25px;
+    font-family: 'Exo', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 130px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+ }
+
+  .animation1{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+  }
+  .a1{
+    animation-name: ani1;
+    animation-duration: 206s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    
+  }
+  @keyframes ani1{
+    0%{margin-left: 0px;}
+    50%{margin-left: 920px;}
+    100%{margin-left: 0px;}
+  }
+  .a2{
+    animation-name: ani1;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    height: 10px;
+    width: 10%;
+  }
+  @keyframes ani2{
+    0%{margin-left: 0px;}
+    50%{margin-left: 1200px;}
+    100%{margin-left: 0px;}
+  }
+  .data1{
+    margin-top: 60px;
+    height: 50px;
+    width: 96%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+    position: relative;
+  }
+  .d1{
+    margin-left: 270px;
+    margin-right: 40px;
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+
+  }
+  .d2{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+
+  }
+  .data2{
+    margin-top: 30px;
+    height: 100px;
+    width: 96%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+.c1{
+    margin-top: 10px;
+    margin-left: 190px;
+    height: 180px;
+    width: 50%;
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+}
+.d3{
+display: flex;
+}
+.d4{
+    display: flex;
+}
+
+.c2{
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 180px;
+    width: 50%;
+    font-family: 'Exo', sans-serif;
+    font-size: 30px;
+    color: aliceblue;
+}
+.d5{
+    display: flex;
+}
+.d6{
+    display: flex;
+}
+.extra{
+
+    display: flex;
+}
+.extra1{
+        margin-left: 500px;
+        margin-top: 30px;
+
+}
+.extra2{
+    margin-left: 100px;
+    margin-top: 30px;
+
+}
+.button{
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #89e7fe;
+        border: none;
+        color:black;
+        text-align: center;
+        font-size: 28px;
+        padding: 10px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+
+        }
+
+        .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+
+        .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+        }
+
+        .button:hover span {
+        padding-right: 25px;
+        }
+
+        .button:hover span:after {
+        opacity: 1;
+        right: 0;
+        }
+        .button2{
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #89e7fe;
+            border: none;
+            color:black;
+            text-align: center;
+            font-size: 28px;
+            padding: 10px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+    
+            }
+    
+            .button2 span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+            }
+    
+            .button2 span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+            }
+    
+            .button2:hover span {
+            padding-right: 25px;
+            }
+    
+            .button2:hover span:after {
+            opacity: 1;
+            right: 0;
+            }
